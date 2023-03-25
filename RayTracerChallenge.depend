@@ -1,0 +1,272 @@
+# depslib dependency file v1.0
+1679444843 source:/home/scott/Development/cpp/ray_tracer_challenge/tests/test_ch2.cpp
+	"doctest.h"
+	<iostream>
+	<sstream>
+	<typeinfo>
+	<cmath>
+	"../primitives/Color.h"
+	"../primitives/constants.h"
+	"../scene/Canvas.h"
+
+1678840597 /home/scott/Development/cpp/ray_tracer_challenge/tests/doctest.h
+	<signal.h>
+	<ciso646>
+	<cstddef>
+	<ostream>
+	<istream>
+	<type_traits>
+	"doctest_fwd.h"
+	<ctime>
+	<cmath>
+	<climits>
+	<math.h>
+	<new>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<limits>
+	<utility>
+	<fstream>
+	<sstream>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	<vector>
+	<atomic>
+	<mutex>
+	<set>
+	<map>
+	<unordered_set>
+	<exception>
+	<stdexcept>
+	<csignal>
+	<cfloat>
+	<cctype>
+	<cstdint>
+	<string>
+	<sys/types.h>
+	<unistd.h>
+	<sys/sysctl.h>
+	<AfxWin.h>
+	<windows.h>
+	<io.h>
+	<sys/time.h>
+	<unistd.h>
+
+1679251136 /home/scott/Development/cpp/ray_tracer_challenge/primitives/Color.h
+	<iostream>
+
+1679249271 /home/scott/Development/cpp/ray_tracer_challenge/primitives/constants.h
+	<cmath>
+
+1679308774 /home/scott/Development/cpp/ray_tracer_challenge/scene/Canvas.h
+	<iostream>
+	<vector>
+	"../primitives/Color.h"
+	"../primitives/Array2d.h"
+
+1679247669 /home/scott/Development/cpp/ray_tracer_challenge/primitives/Array2d.h
+	<stdexcept>
+
+1679447534 source:/home/scott/Development/cpp/ray_tracer_challenge/main.cpp
+	<iostream>
+	<fstream>
+	"primitives/Tuple.h"
+	"primitives/constants.h"
+	"scene/Canvas.h"
+	"VirtualCannon.h"
+
+1679446284 /home/scott/Development/cpp/ray_tracer_challenge/primitives/Tuple.h
+	<iostream>
+
+1679446014 /home/scott/Development/cpp/ray_tracer_challenge/VirtualCannon.h
+	"primitives/Tuple.h"
+	<iostream>
+
+1679251185 source:/home/scott/Development/cpp/ray_tracer_challenge/primitives/Color.cpp
+	"Color.h"
+	"constants.h"
+
+1679447096 source:/home/scott/Development/cpp/ray_tracer_challenge/primitives/Tuple.cpp
+	<iostream>
+	<typeinfo>
+	<cmath>
+	"Tuple.h"
+	"constants.h"
+
+1679445078 source:/home/scott/Development/cpp/ray_tracer_challenge/tests/test_ch1.cpp
+	"doctest.h"
+	<iostream>
+	<typeinfo>
+	<cmath>
+	"../primitives/Tuple.h"
+	"../primitives/constants.h"
+
+1679447000 source:/home/scott/Development/cpp/ray_tracer_challenge/VirtualCannon.cpp
+	"VirtualCannon.h"
+	"primitives/Tuple.h"
+	<iostream>
+
+1679309270 source:/home/scott/Development/cpp/ray_tracer_challenge/scene/Canvas.cpp
+	"Canvas.h"
+	<sstream>
+	<iostream>
+	<string>
+	<string_view>
+	<cmath>
+
+1679478934 source:/home/scott/Development/cpp/RayTracerChallenge/primitives/Color.cpp
+	"Color.h"
+	"constants.h"
+
+1679478931 /home/scott/Development/cpp/RayTracerChallenge/primitives/Color.h
+	<iostream>
+
+1679478942 /home/scott/Development/cpp/RayTracerChallenge/primitives/constants.h
+	<cmath>
+
+1679739780 source:/home/scott/Development/cpp/RayTracerChallenge/primitives/Tuple.cpp
+	<iostream>
+	<typeinfo>
+	<cmath>
+	"Tuple.h"
+	"constants.h"
+
+1679739692 /home/scott/Development/cpp/RayTracerChallenge/primitives/Tuple.h
+	<iostream>
+
+1679445078 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch1.cpp
+	"doctest.h"
+	<iostream>
+	<typeinfo>
+	<cmath>
+	"../primitives/Tuple.h"
+	"../primitives/constants.h"
+
+1678840597 /home/scott/Development/cpp/RayTracerChallenge/tests/doctest.h
+	<signal.h>
+	<ciso646>
+	<cstddef>
+	<ostream>
+	<istream>
+	<type_traits>
+	"doctest_fwd.h"
+	<ctime>
+	<cmath>
+	<climits>
+	<math.h>
+	<new>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<limits>
+	<utility>
+	<fstream>
+	<sstream>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	<vector>
+	<atomic>
+	<mutex>
+	<set>
+	<map>
+	<unordered_set>
+	<exception>
+	<stdexcept>
+	<csignal>
+	<cfloat>
+	<cctype>
+	<cstdint>
+	<string>
+	<sys/types.h>
+	<unistd.h>
+	<sys/sysctl.h>
+	<AfxWin.h>
+	<windows.h>
+	<io.h>
+	<sys/time.h>
+	<unistd.h>
+
+1679447000 source:/home/scott/Development/cpp/RayTracerChallenge/VirtualCannon.cpp
+	"VirtualCannon.h"
+	"primitives/Tuple.h"
+	<iostream>
+
+1679446014 /home/scott/Development/cpp/RayTracerChallenge/VirtualCannon.h
+	"primitives/Tuple.h"
+	<iostream>
+
+1679653705 source:/home/scott/Development/cpp/RayTracerChallenge/primitives/Matrix.cpp
+	"Matrix.h"
+	<iostream>
+	<cmath>
+	<stdexcept>
+	"../primitives/constants.h"
+
+1679738653 /home/scott/Development/cpp/RayTracerChallenge/primitives/Matrix.h
+	<vector>
+	<ostream>
+	"../primitives/Tuple.h"
+
+1679478936 source:/home/scott/Development/cpp/RayTracerChallenge/scene/Canvas.cpp
+	"Canvas.h"
+	<sstream>
+	<iostream>
+	<string>
+	<string_view>
+	<cmath>
+
+1679479248 /home/scott/Development/cpp/RayTracerChallenge/scene/Canvas.h
+	<iostream>
+	<vector>
+	"../primitives/Color.h"
+
+1679480251 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch2.cpp
+	"doctest.h"
+	<iostream>
+	<sstream>
+	<typeinfo>
+	<cmath>
+	"../primitives/Color.h"
+	"../primitives/constants.h"
+	"../scene/Canvas.h"
+
+1679653908 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch3.cpp
+	"doctest.h"
+	<iostream>
+	<typeinfo>
+	<cmath>
+	"../primitives/Matrix.h"
+	"../primitives/constants.h"
+
+1679736732 source:/home/scott/Development/cpp/RayTracerChallenge/matrices/Transform.cpp
+	<iostream>
+	<typeinfo>
+	<cmath>
+	"Transform.h"
+	"../primitives/constants.h"
+
+1679738648 /home/scott/Development/cpp/RayTracerChallenge/matrices/Transform.h
+	"../primitives/Matrix.h"
+	"../primitives/Tuple.h"
+	"../primitives/constants.h"
+
+1679737753 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch4.cpp
+	"doctest.h"
+	<iostream>
+	<typeinfo>
+	<cmath>
+	"../matrices/Transform.h"
+
+1679739355 source:/home/scott/Development/cpp/RayTracerChallenge/main.cpp
+	<iostream>
+	<fstream>
+	"primitives/Tuple.h"
+	"primitives/constants.h"
+	"primitives/Matrix.h"
+	"matrices/Transform.h"
+	"scene/Canvas.h"
+	"VirtualCannon.h"
+
