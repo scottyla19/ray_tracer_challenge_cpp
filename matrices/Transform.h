@@ -1,5 +1,5 @@
 #pragma once
-#include "../primitives/Matrix.h"
+#include "Matrix.h"
 #include "../primitives/Tuple.h"
 #include "../primitives/constants.h"
 
@@ -55,3 +55,4 @@ public:
     ~Shearing() = default;
 };
 
+Matrix view_transform(Point from , Point to, Vector up);

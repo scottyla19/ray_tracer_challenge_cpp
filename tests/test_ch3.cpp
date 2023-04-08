@@ -3,7 +3,7 @@
 #include <typeinfo>
 #include <cmath>
 
-#include "../primitives/Matrix.h"
+#include "../matrices/Matrix.h"
 #include "../primitives/constants.h"
 
 TEST_CASE("Constructing a matrix"){

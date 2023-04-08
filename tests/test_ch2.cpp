@@ -31,7 +31,7 @@ TEST_CASE("Subtracting colors"){
 }
 TEST_CASE("Multiplying colors by scalar"){
     Color c1 = Color(0.2, 0.3, 0.4);
-    c1 *2.0;
+    c1 = c1 *2.0;
     CHECK(c1 == Color(0.4, 0.6, 0.8));
 }
 TEST_CASE("Multiplying colors"){

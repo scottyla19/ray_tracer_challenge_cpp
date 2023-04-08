@@ -21,10 +21,11 @@ Color operator-(const Color& t1, const Color& t2){
 
 }
 
-void Color::operator*(double s){
-    m_red *= s;
-    m_green *= s;
-    m_blue *= s;
+Color Color::operator*(double s){
+    double r = m_red * s;
+    double g = m_green * s;
+    double b = m_blue * s;
+    return Color(r, g, b);
 }
 
 Color operator*(const Color& t1, const Color& t2){

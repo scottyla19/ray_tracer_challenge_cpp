@@ -53,3 +53,17 @@ Shearing::Shearing(double xy, double xz, double yx, double yz, double zx, double
     m_data[8] = zx;
     m_data[9] = zy;
 }
+
+Matrix view_transform(Point from , Point to, Vector up)
+{
+    Vector forward = (to - from).normalize();
+    Vector up_n = up.normalize();
+    Vector left = cross(forward, up_n);
+    Vector true_up = cross(left, forward);
+    std::vector<double> data {left.x(), left.y(), left.z(), 0.0,
+                              true_up.x(), true_up.y(), true_up.z(), 0.0,
+                              -forward.x(), -forward.y(), -forward.z(), 0.0,
+                              0,0,0,1};
+    Matrix orientation = Matrix(4, 4, data);
+    return orientation * Translation(-from.x(), -from.y(), -from.z());
+}

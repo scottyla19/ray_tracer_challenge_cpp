@@ -18,7 +18,7 @@ public:
     void set_green(double g) {m_green = g;}
     void set_blue(double b) {m_blue = b;}
 
-    void operator*(double s);
+    Color operator*(double s);
     friend std::ostream& operator<< (std::ostream& out, const Color& color);
     ~Color() = default;
 };

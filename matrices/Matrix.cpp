@@ -69,7 +69,7 @@ std::ostream& operator<< (std::ostream& out, const Matrix& matrix){
     }
 }
 
-Matrix Matrix::transpose(){
+Matrix Matrix::transpose()const{
     std::vector<double> T_data = m_data;
     for (int r = 0; r < m_rows; r++){
         for (int c = 0; c < m_cols; c++){
@@ -80,7 +80,7 @@ Matrix Matrix::transpose(){
     return T;
 }
 
-double Matrix::determinant(){
+double Matrix::determinant()const{
     double det = 0.0;
     if (m_rows == 2 && m_cols == 2){
         det = m_data[0] * m_data[3] - m_data[1] * m_data[2];
@@ -92,7 +92,7 @@ double Matrix::determinant(){
     return det;
 }
 
-Matrix Matrix::submatrix(int rm_row, int rm_col){
+Matrix Matrix::submatrix(int rm_row, int rm_col)const{
     std::vector<double> sub;
 //    sub.resize((m_rows - 1)* ()m_cols - 1));
         for (int r = 0; r < m_rows; r++){
@@ -110,17 +110,17 @@ double Matrix::minor(int r, int c){
     return a.determinant();
 }
 
-double Matrix::cofactor(int r, int c){
+double Matrix::cofactor(int r, int c)const{
     Matrix a = submatrix(r, c);
     double det = a.determinant();
     return (r + c) % 2 == 0 ? det : -det;
 }
 
-bool Matrix::is_invertible(){
+bool Matrix::is_invertible()const{
     return !floatEqual(determinant(), 0.0);
 }
 
-Matrix Matrix::inverse(){
+Matrix Matrix::inverse()const{
     if (!is_invertible()){
         throw std::runtime_error(std::string("Failed: Non-invertible matrix: "));
     }

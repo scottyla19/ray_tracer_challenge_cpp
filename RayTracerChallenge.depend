@@ -116,24 +116,24 @@
 	<string_view>
 	<cmath>
 
-1679478934 source:/home/scott/Development/cpp/RayTracerChallenge/primitives/Color.cpp
+1680103387 source:/home/scott/Development/cpp/RayTracerChallenge/primitives/Color.cpp
 	"Color.h"
 	"constants.h"
 
-1679478931 /home/scott/Development/cpp/RayTracerChallenge/primitives/Color.h
+1680098571 /home/scott/Development/cpp/RayTracerChallenge/primitives/Color.h
 	<iostream>
 
-1679478942 /home/scott/Development/cpp/RayTracerChallenge/primitives/constants.h
+1680344007 /home/scott/Development/cpp/RayTracerChallenge/primitives/constants.h
 	<cmath>
 
-1679739780 source:/home/scott/Development/cpp/RayTracerChallenge/primitives/Tuple.cpp
+1680049486 source:/home/scott/Development/cpp/RayTracerChallenge/primitives/Tuple.cpp
 	<iostream>
 	<typeinfo>
 	<cmath>
 	"Tuple.h"
 	"constants.h"
 
-1679739692 /home/scott/Development/cpp/RayTracerChallenge/primitives/Tuple.h
+1680049264 /home/scott/Development/cpp/RayTracerChallenge/primitives/Tuple.h
 	<iostream>
 
 1679445078 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch1.cpp
@@ -223,7 +223,7 @@
 	<vector>
 	"../primitives/Color.h"
 
-1679480251 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch2.cpp
+1680103429 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch2.cpp
 	"doctest.h"
 	<iostream>
 	<sstream>
@@ -233,23 +233,23 @@
 	"../primitives/constants.h"
 	"../scene/Canvas.h"
 
-1679653908 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch3.cpp
+1679829654 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch3.cpp
 	"doctest.h"
 	<iostream>
 	<typeinfo>
 	<cmath>
-	"../primitives/Matrix.h"
+	"../matrices/Matrix.h"
 	"../primitives/constants.h"
 
-1679736732 source:/home/scott/Development/cpp/RayTracerChallenge/matrices/Transform.cpp
+1680374034 source:/home/scott/Development/cpp/RayTracerChallenge/matrices/Transform.cpp
 	<iostream>
 	<typeinfo>
 	<cmath>
 	"Transform.h"
 	"../primitives/constants.h"
 
-1679738648 /home/scott/Development/cpp/RayTracerChallenge/matrices/Transform.h
-	"../primitives/Matrix.h"
+1680374018 /home/scott/Development/cpp/RayTracerChallenge/matrices/Transform.h
+	"Matrix.h"
 	"../primitives/Tuple.h"
 	"../primitives/constants.h"
 
@@ -260,13 +260,135 @@
 	<cmath>
 	"../matrices/Transform.h"
 
-1679739355 source:/home/scott/Development/cpp/RayTracerChallenge/main.cpp
+1680105728 source:/home/scott/Development/cpp/RayTracerChallenge/main.cpp
 	<iostream>
 	<fstream>
 	"primitives/Tuple.h"
 	"primitives/constants.h"
-	"primitives/Matrix.h"
+	"matrices/Matrix.h"
 	"matrices/Transform.h"
 	"scene/Canvas.h"
 	"VirtualCannon.h"
+	"shapes/Shape.h"
+	"rays/Ray.h"
+	"materials/Light.h"
+	"materials/Material.h"
+
+1680106061 /home/scott/Development/cpp/RayTracerChallenge/matrices/Matrix.h
+	<vector>
+	<ostream>
+	"../primitives/Tuple.h"
+
+1679910933 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch5.cpp
+	"doctest.h"
+	<iostream>
+	<typeinfo>
+	<cmath>
+	"../rays/Ray.h"
+	"../shapes/Shape.h"
+	"../rays/Intersect.h"
+	"../matrices/Transform.h"
+
+1680106061 source:/home/scott/Development/cpp/RayTracerChallenge/matrices/Matrix.cpp
+	"Matrix.h"
+	<iostream>
+	<cmath>
+	<stdexcept>
+	"../primitives/constants.h"
+
+1679911095 source:/home/scott/Development/cpp/RayTracerChallenge/rays/Ray.cpp
+	"Ray.h"
+	<iostream>
+	<cmath>
+
+1679909260 /home/scott/Development/cpp/RayTracerChallenge/rays/Ray.h
+	<vector>
+	"Intersect.h"
+	"../primitives/Tuple.h"
+	"../primitives/constants.h"
+	"../shapes/Shape.h"
+	"../matrices/Matrix.h"
+
+1680258366 source:/home/scott/Development/cpp/RayTracerChallenge/shapes/Shape.cpp
+	"Shape.h"
+
+1680257066 /home/scott/Development/cpp/RayTracerChallenge/shapes/Shape.h
+	"../primitives/Tuple.h"
+	"../matrices/Matrix.h"
+	"../materials/Material.h"
+
+1680259407 source:/home/scott/Development/cpp/RayTracerChallenge/rays/Intersect.cpp
+	"Intersect.h"
+	<algorithm>
+
+1679855620 /home/scott/Development/cpp/RayTracerChallenge/rays/Intersect.h
+	<vector>
+	"../shapes/Shape.h"
+
+1680104069 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch6.cpp
+	"doctest.h"
+	<iostream>
+	<cmath>
+	"../shapes/Shape.h"
+	"../primitives/Tuple.h"
+	"../matrices/Transform.h"
+	"../primitives/Color.h"
+	"../materials/Light.h"
+	"../materials/Material.h"
+
+1680257040 source:/home/scott/Development/cpp/RayTracerChallenge/materials/Light.cpp
+	"Light.h"
+
+1680257040 /home/scott/Development/cpp/RayTracerChallenge/materials/Light.h
+	<iostream>
+	"../primitives/Color.h"
+	"../primitives/Tuple.h"
+
+1680103398 source:/home/scott/Development/cpp/RayTracerChallenge/materials/Material.cpp
+	"Material.h"
+
+1680105571 /home/scott/Development/cpp/RayTracerChallenge/materials/Material.h
+	<iostream>
+	<cmath>
+	"../primitives/Color.h"
+	"../primitives/Tuple.h"
+	"../primitives/constants.h"
+	"Light.h"
+
+1680383082 source:/home/scott/Development/cpp/RayTracerChallenge/scene/World.cpp
+	"World.h"
+
+1680383071 /home/scott/Development/cpp/RayTracerChallenge/scene/World.h
+	<vector>
+	<ostream>
+	<cmath>
+	"../shapes/Shape.h"
+	"../materials/Light.h"
+	"../matrices/Transform.h"
+	"../rays/Ray.h"
+	"../primitives/Color.h"
+	"../rays/Computation.h"
+	"Canvas.h"
+
+1680382630 source:/home/scott/Development/cpp/RayTracerChallenge/tests/test_ch7.cpp
+	"doctest.h"
+	<iostream>
+	<cmath>
+	<algorithm>
+	"../scene/World.h"
+	"../matrices/Transform.h"
+	"../shapes/Shape.h"
+	"../materials/Light.h"
+	"../rays/Ray.h"
+	"../rays/Intersect.h"
+	"../rays/Computation.h"
+	"../primitives/constants.h"
+
+1680341469 source:/home/scott/Development/cpp/RayTracerChallenge/rays/Computation.cpp
+	"Computation.h"
+
+1680341237 /home/scott/Development/cpp/RayTracerChallenge/rays/Computation.h
+	"../shapes/Shape.h"
+	"Intersect.h"
+	"Ray.h"
 

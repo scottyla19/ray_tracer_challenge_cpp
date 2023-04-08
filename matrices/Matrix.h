@@ -30,13 +30,13 @@ public:
     double& operator()( int r,  int c)  ;
 
     // member methods
-    Matrix transpose();
-    double determinant();
-    Matrix submatrix(int rm_row, int rm_col);
+    Matrix transpose()const;
+    double determinant()const;
+    Matrix submatrix(int rm_row, int rm_col)const;
     double minor(int r, int c);
-    double cofactor(int r, int c);
-    bool is_invertible();
-    Matrix inverse();
+    double cofactor(int r, int c)const;
+    bool is_invertible()const;
+    Matrix inverse()const;
 
     ~Matrix() = default;
 };

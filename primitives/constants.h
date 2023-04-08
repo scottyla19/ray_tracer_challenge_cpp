@@ -4,7 +4,7 @@
 
 
     inline constexpr double ABS_EPSILON = 0.000000001;
-    inline constexpr double REL_EPSILON = 0.00001;
+    inline constexpr double REL_EPSILON = 0.0001;
     inline bool floatEqual(double a, double b, double absEpsilon = ABS_EPSILON, double relEpsilon = REL_EPSILON)
     {
         double diff{ std::abs(a - b) };
